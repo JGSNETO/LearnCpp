@@ -1,0 +1,13 @@
+O que é referência ?
+
+É essencialmente apenas um alias (apelido) para variáveis(int, float, objetos, structs, etc);
+
+Apenas fazem referência a outras coisas.
+
+Quando uma referência é criada ela torna-se um nome alternativo, 
+um apelido(alias) para uma variável existente.
+
+Como declarar uma referência?
+Colocando '&' antes de seu nome na sua declaração
+    int Numero {2000};
+    int &Ref = Numero;
