@@ -1,0 +1,11 @@
+Modularização
+
+Bottom-up: Planejamento a partir dos elementos básicos do software até atingir o programa.
+Programa planejado com foco nos elementos básicos que fazem parte do problema.
+Cada elemento tem características e funções bem específicas. 
+Objetos criados a partir destes elementos(classes), deverão interagir entre si atéo programa ser produzido.
+
+O que importa é a representação (Classe) de cada elemento do mundo real para um objeto.
+Foco nos dados e não nas funções
+Fornece mais reutilizações e menos depedência de funções
+Mais flexibilidades

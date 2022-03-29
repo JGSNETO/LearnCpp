@@ -1,0 +1,26 @@
+Modularização
+
+Ao longo das décadas do século 20 os programas (ou softwares) ficaram cada vez maiores.
+
+Equipes de programação cresceram.
+
+Exigência de mais produtividade nas equipes.
+
+Surgem novas abordagens, entre elas a programação Estruturada e a programação
+orientada a objetos. 
+
+PROGRAMAÇÃO ESTUTURADA
+Top-Down
+-Código é planejado com foco primeiramente no programa principal(O que possui main())
+-Depois funções que aparecem dentro do programa principal
+-A seguir pensa-se nas funções menores que serão necessárias para funções maiores
+-Isso ocorre até que o nível de detalhamento permita o início da codificação utilizando sempre funções.
+
+-Foco no processo e ações que o programa faz
+-Os programas são no geral uma coleção de funções
+-Dados são passados como argumentos para funções
+-Estes dados são declarados separadamente em diversas partes do programa(Eles são agrupados
+em uma entidade específica)
+-Baseados em estrutura de dados e sub-rotinas
+-Fornece menos reutilização e mais dependência de funções
+-Menos abstração e menos flexibilidade 
