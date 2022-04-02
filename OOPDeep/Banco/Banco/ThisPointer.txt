@@ -1,0 +1,23 @@
+Ponteiro THIS
+
+O compilador fornece um ponteiro implícito junto com os nomes das funções este ponteiro é o this.
+
+O ponteiro 'this' é passado como um argumento oculto para todas as chamadas de função de membro não estático e está disponível
+como uma variável local dentro do corpo de todas as funções não estáticas. 
+
+Esse ponteiro é um ponteiro constante que contém o endereço de memória do objeto atual.
+
+Todo objeto em C++ tem acesso a seu próprio endereço através deste importante ponteiro this. 
+
+Assim ponteiro this é um parâmetro implícito para todas as funções de membro. Portanto, dentro de uma função membro, isso pode ser usado 
+para se referir ao objeto da chamada. 
+
+O ponteiro this mantém o endereço do objeto atual, em palabras simples, você pode dizer que este ponteiro 
+aponta para o objeto atual da classe.
+
+Você não pode colocar outro endereço neste ponteiro pois ele é constante.
+
+Você não precisa usar explicitamente o operador this pois o compilador sabe implicitamente utiliza ele.
+
+Contudo existe uma situação em que é necessário quando nome de atributos e parâmetros são os mesmos.
+Para ajudar o compilador a distinguir o membro da classe(atributo) e quem é variável local use this. 

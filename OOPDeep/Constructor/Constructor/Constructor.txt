@@ -1,0 +1,26 @@
+Construtor 
+
+É um método que é chamado automaticamente durante a instanciação de um objeto. E.g: Conta ContaCliente02;; -> Chama o construtor da 
+classe.
+
+Este método deve ter o mesmo nome da classe; Não possui tipo de retorno; Pode receber nenhum ou vários parâmetros.
+
+public:
+	conta();
+	conta(std::string Banco, int Agencia, int NumConta, std::string Titular, double Saldo)
+
+Contrutor overload: Vários construtores com parâmetros diferentes. Como o compilador vai saber
+quem ele vai chamar ? - Depende do match; 
+	Conta();
+	Conta(int Agencia, int NumConta);
+	conta(std::string Banco, int Agencia, int NumConta, std::string Titular, double Saldo)
+
+Ou seja quando você cria um objeto a partir de uma classe o método construtor será sempre executado.
+
+No geral  utilizado para inicializar atributos, executar ações iniciais em relação ao objeto que está sendo criado.
+
+Mesmo que você não cire um construtor, o compilador cria implicitamente um construtor automatico e sem parâmetros. Mas se você criar
+ele deixa de criar o construtor automático. 
+
+Podem ser declarados diversos construtores na classe desde que com assinaturas de funções diferentes. 
+Não é obrigatório declarar um construtor. 

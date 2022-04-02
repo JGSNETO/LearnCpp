@@ -1,3 +1,5 @@
+/*Notação ponto: <NomeDaClasseQueDesejaInstanciar><NomeDoObjeto>
+ Casa CasaDePraia*/
 #include <iostream>
 
 class Casa
