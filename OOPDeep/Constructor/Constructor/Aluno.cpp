@@ -1,10 +1,18 @@
 #include "Aluno.h"
+#include <iostream>
+#include <string>
 
-Aluno::Aluno(td::string Nome, int Idade, bool bMatriculado)
+Aluno::Aluno(std::string Nome, int Idade, bool bMatriculado)
 {
-	/*Parou aqui*/
+	
+	this->Nome = Nome;
+	this->Idade = Idade;
+	this->bMatriculado = bMatriculado;
 }
-
+Aluno::~Aluno()
+{
+	std::cout << "\n Destrutor objeto endereco: " << this << "Executado\n";
+}
 std::string Aluno::Get_Nome()
 {
 	return Nome;

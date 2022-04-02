@@ -14,6 +14,7 @@ private:
 public:
 
 	Aluno(std::string Nome, int Idade, bool bMatriculado);
+	~Aluno();
 	std::string Get_Nome();
 	int Get_Idade();
 	bool Get_Matriculado();

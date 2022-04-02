@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <Text Include="Constructor.txt" />
+    <Text Include="Destructor.txt" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Aluno.h" />

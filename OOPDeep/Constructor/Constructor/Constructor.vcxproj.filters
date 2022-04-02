@@ -18,6 +18,9 @@
     <Text Include="Constructor.txt">
       <Filter>Resource Files</Filter>
     </Text>
+    <Text Include="Destructor.txt">
+      <Filter>Resource Files</Filter>
+    </Text>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Aluno.h">

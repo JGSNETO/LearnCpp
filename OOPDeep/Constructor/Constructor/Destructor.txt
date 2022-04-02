@@ -1,0 +1,9 @@
+Destrutor 
+
+Função(método) automaticamente invocado quando o objeto é destruido.
+Neste caso quando o objeto deixar seu escopo ele será destruido na stack e o destrutor será chamado. 
+Mas quando o objeto é criado na heap através de ponteiros ele só poderá ser destruído da memória com a função delete. E somente
+após ela ser chamada o destrutor do objeto será chamado. 
+No geral é utilizado para liberar recursos da memória relativos ao objeto. 
+Não aceita parâmetros e também não possui tipo de retorno. 
+Na classe só pode haver apenas um destrutor declarado e ele não é obrigatório. 
