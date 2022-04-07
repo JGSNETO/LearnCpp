@@ -1,0 +1,30 @@
+Structs
+Uma estrutura ou struct é um grupo de elementos de dados agrupados sobre um nome;
+Esses elementos de dados, conhecidos como membros, podem ter diferentes tipos e diferentes tamanhos.
+Ex:
+
+struct Produto{
+    int Codigo;
+    std::string Nome;
+    double Preco;
+    float Peso;
+} Teclado, Mouse;
+
+Essa declaração cria um novo tipo de dado de nome Produto. Este tipo pode ser utilizado para criar 
+objetos desse tipo. Ex: Teclado; Mouse. 
+
+OBS: Logo no final da declaração da struct depois de } e antes do ponte e virgula no final ; 
+pode  ser usado para já declarar objetos do tipo struct.
+
+É uma outra forma de criar um tipo definido pelo usuário, tal como a classe.
+
+Na classe: Por padrão os membros serão privados
+Na struct: Por padrão os membros serão públicos
+
+Mas a contrução e modelagem são as mesmas, com possibilidade de construtores, funções membro,
+atributos e encapsulamento. Struct veio da linguagem C, porém em C++ struct possuem muito mais 
+funcionalidades e possibilidades. 
+
+Apesar de serem quase iguais nós usamos estruturas quando queremos uma coleção de membros de dados
+que devem estar acessíveis em qualquer lugar do código. Por outro lado usamos classe    quando estamos
+modelando uma forma mais complexa.

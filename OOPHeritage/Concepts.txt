@@ -1,0 +1,32 @@
+Conceito de herança:
+
+Herança pode ser definida como "O que se herda ou se transmite por hereditariedade",
+sendo hereditariedade definida por ele como "Transmissão dos caracteres físicos ou morais
+aos descendentes". 
+
+Na programação orientada a objetos o Conceito de herança consiste na transmissão de recursos
+já declarados e implementados em uma classe para outra(s) classe(s).
+
+Animal
+|
+cachorro
+
+A classe que transmite as informações a serem herdadas por outra classe é chamado de classe
+"Pai/Mãe" "Superclasse" ou classe "base".
+
+Já a classe que recebe as informações herdadas é chamada de classe filha, subclasse ou classe derivada.
+Sendo a subclasse uma classe derivada da superclasse, podemos dizer que ela é uma extensão da sua classe Mãe
+pois aproveita todos os recursos definidos na classe mãe e ainda tem a possibilidade de modificar algumns
+destes recursos e ainda pode incluir novos e diferentes outras tantos recursos.
+
+A herança é um conceito aplicado no momento de criação das classes. Ela é usada na intenção de evitar
+que classes que possuam atributos ou métodos repetidos e que poderiam ser retuilizados pelo conceito
+de herança. 
+
+A capacidade de uma classe derivar propriedades e caracteristicas de outra classe é chamada
+herança. 
+A herança é uma das caracteristicas mais importantes da POO. 
+
+class NomeClasseDerivada : ModoDeAcesso NomeDaClasseBase{}
+
+class Professor : public Pessoa{};
