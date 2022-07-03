@@ -1,0 +1,167 @@
+#What is unit testing?
+
+Why do we unit test ? 
+-Bugs can hurt the business
+-SW testing catches the bugs before they get to the field
+-Need several levels of safety nets
+
+Levels of testins:
+-Unit testing: Testing at the function level. This is generally the lowest level of testing and most 
+comprehensive. 
+    - test individual function
+    - A test should be written for each test case for function
+    - Groups of test can be combined into test suites for better organization
+    - Executes in dev env
+    - Execution should be automized
+-Component testing: Testing is the library and compiled binary level testing external interfaces of these 
+components.
+-System testing: Teste the external interfaces of a system which is a collection of sub-systems. 
+-Perfomance systems: Testing done at sub-system and system levels to verify timing and resources usages 
+are accetable. 
+
+#Structure
+- Setup: Create a test
+- Action: Invokes the code 
+- Assert: Evaluate the response
+
+What TDD is ?
+-A process where the developer takes personal responsability for the quality of their code
+-Unit test are written before the production code
+-Dont write all the tests or production code at once
+-Test and production code are both written together in small bits of functionality
+
+Benefits
+
+-Gives you the confidence to change the code
+-Immediate feedback
+-Documents what the code is doing 
+-Drives good object oriented design 
+
+TDD Workflow:
+-TDD has the following phases: 
+Red phase: write a failing unit test 
+Green phase: write just enough code to make that test phases
+Refactor: the unit and the production code make it clean 
+
+TDD Rules:
+You may not written any production code until you have written a failling unit test
+You may not write more of a unit test than is sufficiente to fail, and not compiling is faling 
+You may not write more production code than is sufficient to pass the currently  failing unit test visual 
+
+#Google Test
+-Google test is an open source c++ unit testing framework from google. 
+-Provides the ability to create test, test cases, and test suites. 
+-provides several types of assert macros for generaing unit test failures 
+based on boolean, binary, and string comparisons. 
+-Has command line parameters to help filter which test are executed and in what order. 
+
+#The test macro
+-The test macro defines an individual test for a particular test case.
+-Tests from the same test case will be grouped together in the execution
+output. 
+-Test case and test names should be valid c++ identifiers and should not use "_'.
+TEST(TestCaseName, TestName){
+    EXPECT_EQ(1,1);
+}
+
+#Test fixtures
+-Allows for common setup and teardown between tests.
+-Text fixtures are classes derived from ::testing::Test.
+-Each test fixture class can implement virtual setUp and Teardown functions which will be
+called between each test. 
+-Test that are using a test fixture use the TEST_F macro rather than TEST and pass in the 
+test fixture class name and the test name: TEST_F(TestFixtureClass, TestName)
+
+#Test fixture - Constructor/Destructor vs SetUp/TearDown
+
+-Can use test fixture Constructor/Destructor instead of SetUp/TearDown since new instance
+is created for each test
+-Constructor/Destructor is preferable as it allows for const member variables and automatic
+calls to base class constructors.
+-SetUp/TeadDown function may still be necessaryif you may throw an exception during cleanup
+as this leads to undifined behaviour in Destructors. ]
+
+#Google Test Assert
+
+-Peform the checks that deterine if a test passes or fails.
+-Two failure types:
+    -ASSERT: Macros which abort the current test if they fail.
+    -EXPECT: Macros which indicate a failure but do not abort the current test
+-Expects macros should be used if possible 
+
+Four comparision types:
+1. Basic: Verifies that a passed boolean expression evaluates to True or False.
+2. Binary: Compares binary values to see if they are equal, not equal, less than, 
+less than or equal, greater than, or greater than or equal. 
+3. String: Compares two C style strings to see if they are equal, not-equal, equal
+ignoring case, or not-equal ignoring case. 
+4. Floats/Doubles: Compares two floats or doubles to seeif they are "close" to equal.
+Also provides an assert for specifying the max allowed difference between the floats. 
+
+#Asserts on exception
+
+Fails when a specific exception is not thrown, when any execption is not thrown, or when 
+an exception is thrown and none was expected. 
+
+#Command line arguments
+
+-Many command line options available for controling how test are run
+
+1.gtest_filter: Regular expressions which indicate which tests should be run in the format
+of: TestCaseRegEx:TestRegEx
+2.gtest_repeat: Repeats running the test the specified number of times. Can be very
+helpful for ensuring you dont have any flaky tests. 
+3.gtest_shulffle: Runs the test in a randomized order. Helps to ensure no dependencies 
+between the tests. 
+
+#What are test doubles?
+-Almost all code depends with other parts of the system.
+-Those other parts of the system are not always easy to replicate in the unit test environment
+or would make test slow if used directly 
+-Test double are objects that are used in unit test as replacements to the real 
+production system collaborators
+
+#types
+1. Dummy: Objects that can be passed around as necessary but do not have any type of test 
+implementation and should never be used.
+2. Fake: these object generally have a splified functional 
+implementatation of a particular interface that is adequate for testing byt not for production
+3. Stup: These objects provide implementations with canned answers that are suitablefor the test.
+4.Spies: The objects procude implementation 
+that record the valuies that were passed in so they can be used by the test
+5.Mocks: These objects are pre-programed to expect specific calls and parameters and acn throw exceptions
+when necessary.
+
+#Mock framework 
+-Most mock framework provide easy ways for automatically 
+creating any of these types of test doubles at runtime.
+-They provide a fast means for creating mocking expectations for your test
+-They can be uch ore efficient than implementing custom mock objectof you own creation
+-Creating mock objects by hand can be tedious and error prone. 
+-C++ mocking framework(Google mocking)
+
+#TDD Best Pratices
+
+1.Always do the next simplest test case
+-Doing the next simplest case allows you to gradually increase the complecity of you code.
+-If you jump into the complex test cases to quickly you will find youself
+stuck writing a lot of functionality all it once. 
+-Beyond just slowing you down, this can also lead to bad design decisions
+
+2.Use descriptive test names
+-Code is read 1000 times more than its written. Make it clear and readable
+-Unit test are the best documentations for how you code works make them easy to understand. 
+-Test suites should name the class or function under test and the test names 
+shoulf describe the functionality being tested.
+
+3.Keep test fast
+-One of the biggest benefits of TDD is the fast feedback on how your changes have
+affected things. 
+-This goes away if your unit tests take more than a few seconds to build and run.
+
+4.Use code coberage tools
+-Once you have all your test cases covered and you think you are done run your unit
+test through a code coverage tools
+-This can help you indentify ant test cases you may have missed
+-You shoudl have a goal of 100% code coverage in functions with real logic in them. 
+
