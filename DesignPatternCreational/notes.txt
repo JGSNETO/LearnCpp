@@ -1,0 +1,72 @@
+#Design Pattern 
+
+Its a big challange to create, flexible, maintainable and extensible code. 
+
+A design pattern is a common repeatable solution for creating software programs. they are
+templates and best pratices. 
+
+Software Chalanges:
+1. flexible
+2. Maintenance 
+3. Extensions 
+
+Implement Solutions:
+1. Add new features
+2. Remove features
+3. Replace features
+4. Apply program in different situations 
+
+#DP Categories
+1. Creational: object instantiation.    
+    -Factory method
+    -Abstract method
+    -Builder
+    -prototype
+    -Singleton
+2. Structural: class relationships and hierarchies 
+3. Behavioral: object intercommunication
+
+#Creational
+
+Separate object creation from the rest of the code;
+
+#Object-oriented Programming 
+
+-Classes 
+-Inheritance
+
+OBS: Class explosion:: Many childrens from one dad; 
+
+1. Use composition over inheritance. 
+-Property referenced by another class
+-Inheritance is when one class extends another
+
+#Concrete x Abstract
+ 
+-Virtual: Keyword indicating a method must be overridden
+
+#Unified modeling language 
+
+A diagram that describes the relationships between elements in a system. 
+
+#Factory method design pattern
+-One of most used design pattern;
+-Encapsulates the creation of related objects
+-Provides an interface to create an object but defers the creation to the subclasses
+1. Creates objects based on runtime parameters
+2. Do not need to know which objects you will need to create
+3. Lets the subclasses instatiate the object instead of the main
+4. Easily add new products or change existing ones
+5. No need to make changes throughout
+6. Extensible to include objects
+7. Object generation located in one place 
+8. Easily switch between factories
+
+#Abstract Factory Design Pattern
+1.Provides an interface for creating families of related objects without specifying their
+concrete objects without specifying their concrete class. 
+
+#Builder concept
+-Builder Design Pattern
+1. Separates construction of complex objects 
+2. 

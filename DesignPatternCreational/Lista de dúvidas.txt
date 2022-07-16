@@ -1,0 +1,5 @@
+1- Porque criar objetos como ponteiros
+2- Revisar ponteiros
+3- Uso da keyword virtal
+4- Exercitar TDD
+5- Factory method
