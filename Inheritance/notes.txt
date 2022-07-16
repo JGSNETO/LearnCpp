@@ -1,0 +1,16 @@
+#What is
+->Derived class from a base class. 
+Base class -> Derived class
+
+#Members access specifiers:
+Public: all objects
+Protected: Base class and derived class
+Private: Only base class
+
+#Multiple inheritance
+
+Listen more than one class. 
+
+#Polimorphism
+
+The same entity (function or object) behaves differently in different scenarios
