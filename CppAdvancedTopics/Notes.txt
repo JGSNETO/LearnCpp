@@ -1,0 +1,48 @@
+#Class x Structure
+
+-In structure the data members default to public and class they default to private. 
+
+#Getters x Setters:
+-Setters: Set value of data members
+-Getters: Get value of data members
+
+#namespace
+Managing naming colisions
+
+#Operators overload
+-It is not unique to c++. 
+-Two ways:
+1. With members functions as part of a class definition. 
+2. With non-members functions. 
+Structure:
+
+nameOfTheClass operator operator(itself) the arguments
+Rational operator = (const Rational &);
+
+#Allocate memory
+-New and delete are used to create and delete objects from memory. 
+
+#Lambda functions 
+-Lambda functions or expressions : Is an anonymous function with the ability
+to refer to identifiers outside of its own scope. 
+-Good when you dont need to re-use the code. 
+
+#Compiler structure:
+1. Preprocessor 
+2. Compiler
+3. Optimizer 
+4. Linker 
+
+#Macros:
+#define ONE 1
+constexpr int ONE = 1 
+
+#Conditional processing 
+
+#ifdenf CONDITIONAL_H_
+#define CONDITIONAL_H_
+
+#define TWO 2
+
+#endif /* CONDITIONAL_H_ */
+
