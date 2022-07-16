@@ -46,3 +46,393 @@ constexpr int ONE = 1
 
 #endif /* CONDITIONAL_H_ */
 
+#Abastract factory design pattern
+
+-Provides na interface for creating families of related objects without specifying
+
+Their concrete classes
+
+-"Factory of factories"
+
+-Each factory will create their own variation
+
+#Builder
+
+-Separetes construction of complex objects from its representation
+
+-This allows us to build a complex object one step at a time
+
+-Same construction process for different representations
+
+E.g: Fast food combo meal
+
+-The builder design pattern encapsulates the build
+
+-Unlike others design pattern the concrete builder can return products that do not share
+
+The same interface or base class
+
+-Builders share the same steps to build a object
+
+-The builder pattern can be useful in cases when complex, unrelated objects are needed
+
+#Prototype design pattern
+
+-Creates new objects cloning a existing one
+
+-Is like cell division or cloning. Traits are like the properties or a object in programming
+
+How is different from a copy constructor ?
+
+-For a copy constructor we need to know exactly what object needs to be copied.
+
+-Clone a existing object with prototype design its very simple, not only simple, allow us to copy the private fields that cant be acessed with a method externally.
+
+#Shallow copy: Only the members of a object are copied over any reference objects are not copied
+
+#Deep copy: Makes copies of reference objects
+#Singleton
+
+-Must be globally accessible
+
+-Must only be one instance of a class
+
+-What makes this pattern particularly is that its constructor is private. This means that only
+
+The singleton itself is able to create a singleton
+
+-Singleton pattern ensure a object is globally accessible and has one instance.
+
+#Parallel and Concurrent Programming c++
+
+Action: Install Cygwin
+
+#Parallel Computing Hardware
+
+Serial execution: One by one execution
+
+Limited by the processor
+Parallel execution
+
+image.png
+ 
+
+Parallel execution increases throughput
+Accomplish a single task faster
+Accomplish more task in a given time
+Flynn's taxonomy
+image.png
+ 
+
+image.png
+#SISD
+
+-Sequential computer with a single processor
+
+image.png
+#SIMD
+
+-Type o parallel computer with multiple processor units
+
+-All the processors execute the same instruction in any given time, but they can
+
+Each operate in different data element
+
+image.png
+#MISD
+
+-Each unit executes a instruction, but in the same string of data
+
+image.png
+#MIMD
+
+-Each unit executes a instruction with different data
+
+ 
+
+#Parallel programming model
+
+-Single program, Multiple data(spmd)
+
+image.png
+-Multiple program, multiple data(MPMD)
+
+#Shared memory
+
+-All processors acess the same memory with global address space
+
+-If i change something in our shared memory space, everyother processor
+
+Will be able to see it.
+
+#Shared Memory Architectures
+
+-Uniformed memory Access(UMA)
+
+-Non-uniform memory access(NUMA)
+
+ 
+
+image.png
+ 
+ 
+
+#Threads and Processes
+#Processes
+
+-Include code, data, and state information
+
+-Independent instance of a running program
+
+-Separate address space
+#Thread
+
+-Independent path of execution
+
+-Subset of a process
+
+-Operating system schedules threads for execution
+
+image.png
+ 
+
+#Inter-process communication (IPC)
+
+-Sockets and pipes
+
+-Shared memory
+
+-Remote procedure calls
+
+ 
+
+#Threads vs Processes
+
+-Threads are "lightweight" - require less overhead to create and terminate
+
+-Operating system can switch between threads faster than processes
+
+
+#Concurrency
+
+-Ability of a program to be broken into parts that can run independently
+
+Of each other.
+
+#Concurency
+
+-Program structure
+
+-Dealing with multiple things at once
+
+ 
+
+#Pallelism
+
+-Simultaneous execution
+
+-Doing multiple things at once
+
+ 
+
+#Scheduler
+
+-Operating system function that assigns processes  and threads to run on available
+
+CPUs.
+
+ 
+
+#Context Switch
+
+-Storing the state of a process or thread to resume later
+
+-Loading the saved state for the new process or thread to run
+
+ 
+
+#Scheduling algorithms
+
+-FIFO
+
+-Shortest job next
+
+-Priotrity
+
+#Scheculing goals
+
+-Maximize thoughput
+
+-Maximize fairness
+
+-Minimize wait time
+
+-Minimize latency
+
+ 
+
+ 
+
+ 
+
+#join()
+
+ 
+
+-Wait until another thread completes its execution
+
+#Garbage Collector
+
+ 
+
+-Automatic memory management
+
+-Reclaims memory no longer in use by program
+
+ 
+
+#Daemon thread(Background)
+
+-Does not prevent the process from terminating
+
+-By default, threads are created as non-daemon
+
+ 
+
+ 
+
+#Mutal exclusion
+
+ 
+
+#Data race
+
+-Problem that occurs when:
+
+Two or more concurrent threads access the same memory location
+At least one thread is modifying it
+ 
+
+Read-Modify-Write
+
+ 
+
+#Detecting Data Races
+
+Hard to do
+ 
+
+#Preventing data races
+
+Pay attention whenever two or more threads access the same resources
+ 
+
+#Mutual exclusion
+
+#Critical section
+
+-Code segment that accesses a shared resource
+
+-Should not be executed by more than one thread or process at a time
+
+ 
+
+#Mutex(lock)
+
+-Mechanism to implement mutual exclusion
+
+-Only one thread or process can possess at a time
+
+ 
+
+#Atomic Operations
+
+-Execute as a single action, relative to other threads
+
+-Cannot be interrupted by other concurrent threads
+
+ 
+
+#Acquiring a lock
+
+-If lock is already taken, block/wait for it to be available
+
+ 
+
+#Locks
+
+ 
+
+#Deadlock
+
+-All processes and threads are unable to continue executing
+
+#Reentrant Mutex
+
+-Can be locked multiple time by the same thread
+
+-Must be unlocked as many time as it was locked
+
+#Common Terms
+
+-Reentrant Mutex
+
+-Reentrant lock
+
+-Recursive Mutex
+
+-Recursive Lock
+
+ 
+
+#Try lock
+
+-Non-Blocking lock/Acquire method for mutex
+
+-If the mutex is available, lock it and return TRUE
+
+-If the mutex is not available, immediately retun FALSE
+
+ 
+
+#Shared mutex
+
+ 
+
+#Reader-Writer Lock
+
+-Shared Read: Multiple threads at once
+
+Threads Reading > Threads Writing
+
+Or
+
+-Exclusive write: Only one thread at a time
+
+ 
+
+#DeadLock
+
+-Each member is waiting for another member to take action
+
+
+#Liveness
+
+-Properties that require a system to make progress
+
+-Members may have to "take turns" in critical sections
+
+#Livelock
+
+-Multiple threads or processes are activily responding to each other
+
+To resolve conflict, but that prevents them from making progress
+
+#Parallel and Concurrent Programming with C++ PT.2
+
+ 
+
+ 
+
+ 
+
