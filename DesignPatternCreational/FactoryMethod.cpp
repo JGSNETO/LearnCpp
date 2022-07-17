@@ -4,30 +4,34 @@ using namespace std;
 
 //Class creator
 class rock {
-private:
-    char _type[10];
 public:
     rock(){}
+    char _type[10];
     char *getType(){
         return _type;
     }
 };
+
+
 //Concrete product
 class smallRock:public rock{
 public:
     smallRock(){
-        _type = "small";
+        //_type = "Small";
         cout << "\nSmall rock created" << endl;
     }
 };
+
+
 //Concrete product
 class midRock:public rock{
 public:
     midRock(){
-        _type = "mid";
+        //_type = "mid";
         cout<<"\nMid rock created" << endl;
     }
 };
+
 
 /*Creator concrete*/ 
 class rockFactoryCreator{
@@ -39,6 +43,7 @@ public:
         cout << "2: Mid" << endl;
         cout << "Selection: ";
         cin >> choice;
+
 
         switch (choice)
         {
@@ -53,12 +58,13 @@ public:
     }
 };
 
+
+
 int main()
 {
     rockFactoryCreator rockCreator;
     rock *asteroid; 
     asteroid = rockCreator.GetRock();
-    cout <<"\nYou had asked for a(n)" << asteroid->getType() << endl;
     system("PAUSE");
     return 0;
 }
