@@ -49,11 +49,8 @@ constexpr int ONE = 1
 #Abastract factory design pattern
 
 -Provides na interface for creating families of related objects without specifying
-
 Their concrete classes
-
 -"Factory of factories"
-
 -Each factory will create their own variation
 
 #Builder
@@ -430,6 +427,23 @@ To resolve conflict, but that prevents them from making progress
 
 #Parallel and Concurrent Programming with C++ PT.2
 
+#Synchronization
+
+#Conditional Variable
+-Queue of threads waiting for a certain condition 
+-Associated with a mutex
+
+#Monitor
+-Protect section of code with mutual exclusion 
+-Provide the ability for threads to wait until a condition occurs
+
+#Three Operations:
+1.Wait
+-Automatically release lock on the mutex
+-Go to sleep and enter waiting Queue
+-Reacquire lock when woken up
+2.Signal
+3.Broadcast
  
 
  
