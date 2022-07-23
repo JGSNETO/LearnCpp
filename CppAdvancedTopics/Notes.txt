@@ -446,7 +446,342 @@ To resolve conflict, but that prevents them from making progress
 3.Broadcast
  
 
+ #Signal
+
+-Wake up one thread from conditional variable queue
+
+-Also called notify or wake
+
  
 
+#Broadcast
+
+-Wake upp all threads from conditional variable queue
+
+-Also called notify all or wake all
+
+ 
+
+#Shared Queue or Buffer
+
+-Mutex
+
+-Conditional variables
+
+-BufferNotFull
+
+ 
+
+#Procucer-Consumer Pattern
+
+-Producer(s)
+
+Add elements to shared data structure
+-Consumer(s)
+
+     -    Remove elements from shared data structure
+
+ 
+
+FIFO
+
+-Items are removed in the same order that they are added to the queue
+
+-First item added will be first item removed
+
+ 
+
+Synchronization Challanges
+
+-Enforce mutual exclusion of producers and consumers
+
+-Prevent producers from trying to add data to a full queue
+
+-Prevent consumers from trying to remove data from a empty queue
+
+ 
+
+#Unbounded Queue
+
+-A queue with na unlimited capacity is still limited by meory
+
+ 
+
+Average rate of production < Average rate of consumption
+
+ 
+
+#Pipeline
+
+-Chain of processing elements
+
+ 
+
+#Semaphore
+
+-Synchronization mechanism
+
+-Can be used by multiple threads at the same time
+
+-Includes a counter to track availability
+
+ 
+
+#acquire()
+
+-If counter is positive, decrement counter
+
+-If counter is zero, wait until available
+
+ 
+
+#release()
+
+-Increment counter
+
+-Signal waiting thread
+
+ 
+
+#Mutex x Semaphore
+
+-Mutex: Can only be acquired/released by the same thread
+
+-Semaphore:Can be acquired/released by different threads
+
+ 
+
+#Barriers
+
+ 
+
+#Race condition
+
+-Searching for race conditions: Use sleep statements to modify timing and execution order
+
+-Heisenbug: A sw bug that disappears when you try to study it
+
+ 
+
+#Barrier
+
+-Prevents a group of threads from proceeding until enough threads have reached the barrier
+
+#Thread Pool
+
+ 
+
+-Creates and maintains a collection of worker threads
+
+-Reuses existing threads to executes task
+
+ 
+
+#Future
+
+-Placeholder for a result that will be avaiable later
+
+-Mechanism to access the result of a asynchronous operation
+
+#Divide and Conquer
+
+Divide a larg problem into subproblems
+Conquer the subproblems by solving them recursively
+Combine the solutions to the subproblems
+
+#Evaluating Parallel Performance
+
+#Weak scaling
+
+-Variable number of processors with fixed problem size per processor
+
+-Accomplish more work in the same time
+
+#Strong scalling
+
+-Variable number of processors with fixed size total problem size
+
+-Accomplish same work in less time
+
+#Tools that improve your code
+
+ 
+
+-The compiler know the language better than you do
+
+-Turn on all warnings, and dont ignore them
+
+-Often a warning is a bug
+
+ 
+
+#Static analyzers
+
+ 
+
+-Tool that automatically examines C++ code for issues
+
+-Analysis is much slower than compilation
+
+-Dozens of static analyzers, open source and commercial
+
+-Occasional false positive
+
+-Usally added to a programs build chain
+
+ 
+
+#Auto type deduction
+
+-Auto tells the compiler to deduce the type of a variable
+
+-Aut0 forces initialization of variables
+
+-Dont use aut0 to hide type information
+
+ 
+
+#Range based for loops
+
+-C++ will loop a range of values
+
+-Can iterate over all STL Containers, strings and arrays
+
+-You can add support of range-based for loops to your own types by supporting
+
+The iterator interface
+
+-Less reason to use bug prone for loop, with indexes
+
+ 
+
+#Strongly typed enums
+
+-Must use scope resolution operator
+
+-Enums o longer exported to the surrounding scope
+
+-Redefinition of types is no longer na issue
+
+-Implicit converion is no longer allowed
+
+-Prefer strongly typed enums to enums
+
+ 
+
+#Using Lambdas
+
+-A lambda expression is a unnamed function object
+
+-Use a lambda to write a local function of limited use
+
+-Use a lambda for complex initialization
+
+-Prefer a lambda expression to std::bind
+
+ 
+
+#Variadic Template Functions
+
+-Types of each parameter can be different
+
+-Must have a base case to accept one parameter
+
+-Prefer variadic template functions to variadic functions
+
+ 
+
+#How C++ and the STL Name Things
+
+ 
+
+-Many programmers find C++ names confusing
+
+-The short and sometimes cryptic names
+
+-The use of snake casing
+
+-C++ is old and some of the names even older
+
+ 
+
+#Map, Filter and Reduce
+
+-Many languages have map, filter and reduce methods
+
+-C++ seems to lack them
+
+#Be carefull with string_view
+
+-String_view is a non-owning reference to a string
+
+-It represents a view of a sequence of characters
+
+-Be sure that the source lives longer than the string_view
+#Amdahl's law
+
+Overall Speedup = 1/((1-p)+(p/s))
+
+p=portion of program that's parallelizable
+s=Speedup of the parallelized portion 
+
+Speedup = (Sequential execution time)/(Parallel execution time)
+
+#Efficiency 
+
+How well addition resources are utilized    
+
+Efficiency = Speedup / # of processors 
+
+#Design Parallel Programs
+#Partitioning
+#Parallel design stages
+1.Partitioning: Break the problem into discrete pieces of work
+2.Communication
+3.Aglomeration 
+4.Mapping
+
+#Communication
+Cordinate task execution and share information
+
+#Synchronos blocking communication
+-Task wait until entire communication is complete 
+-Cannot do other work while in progress
+#Asynchronous Nonblocking communication
+-Task do not wait for communication to complete
+-Can do other work while in progress
+
+-Overhead: Compute time/resources spent on communication
+-Latency: Time to send message from A to B
+-Bandwidth: Amount to data communicated per seconds
+
+
+#Aglomeration
+-Combine task and replicate data/computation to increase efficiency
+
+Granularity = Computation/Communication
+
+-Fine-grained parallelism
+1. large number of small task
+2. Advantage: Good distribution of workload 
+3. Disadvantage: low computation to communication ratio
+
+-Coarse-grained parallelism
+1. Small number os large task
+2. Advantage: High computation-to-communication ratio
+3. Disadvantage: Inefficient load balancing 
+
+#Mapping
+-Specify where each task will execute
+-Does not apply to
+1. Single core processors 
+2. Automated task scheduling
+
+#Goal
+1. Minimize the total execution time 
+
+#Strategies
+1. Place task that can execute concurently on different processors 
+2. Place task the communicate frequently on the same processor
  
 

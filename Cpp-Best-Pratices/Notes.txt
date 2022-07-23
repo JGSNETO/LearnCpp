@@ -1,0 +1,57 @@
+#New C++ Features
+
+CPP11: Added lambdas, auto type destruction, list initialization, smart pointers, and move
+semantics
+CPP14: Gave us return type deduction, binary literals and generic lambdas expressions
+CPP17: Structured binding, nested namespaces, inline variables, and contesxpr lambdas
+
+#File name convetion
+
+C++ files shoudl be named .CPP11
+The iso C++ Committe prefers *.h
+The boost library *.hpp
+
+# Insert note here
+
+#Size_t and auto
+
+- Size_t is a basic usigned integer, size depends on system
+- Size_t can improve your code portability and eficiency 
+- For indexing containers, you should use size_type, also know as size_t
+
+# The filesystem library
+
+- Based on the boost library filesystem
+
+
+# Managing objects 
+
+#Which pointer when
+
+- Modern c++ has three types of smart pointers
+
+1. std::shared_ptr
+2. std::unique_ptr
+3. std::weak_ptr
+
+#The rules of zero, Three, and five
+
+-There are five class special functions 
+1. Copy constructor, copy assignment operator, move constructor, move assignment operator, and
+the destructor
+
+The rule of five: If you create any of them, you should create them all. 
+
+#Const is you friend 
+- Const hepls your profile
+- Const make your intentions clear 
+- Less bugs and cleaner code
+- Possible performance boost
+
+#Resource acquisition is initialization
+-RAII is about writing safer c++ code
+-The destructor of stack objects are always called
+-Stack objects are trashed in reverse order of their creation 
+-So, any critical resources, should be created on the stack and they should be 
+written to destroy themselfes properly 
+

@@ -1,0 +1,148 @@
+#Assembly overview
+#Controlling the cpu with Assembly
+#Advantages of Assembly
+
+1. Speed
+2. Code runs as fast as it can
+3. No overhead or translation involved
+4. c(A mid level language) offers low-level access but also high-level capabilities 
+
+#C and Assembly 
+
+-The asm keyword allows assembly to be written inside C
+-You can code C inside of Assembly 
+-Objects modules from c or assembly can be linked 
+
+#Using assembly in c
+1. Optmize your code
+2. Most c compilers are optimized 
+3. Always room for improvement 
+
+#Typical intel Processors 
+
+1. General Purpose Register: Temporary storage of values
+2. Instructor pointer register: Tracks which instruction peform next 
+3. Flags register: Reports the effect of operations 
+4. Floating point register: Real numbers math operations
+
+#Assembly instruction set:
+1. Mov: Moves data between registers
+2. Sub: Subtraction op
+3. Jmp: Program flow
+4. Cmp: Compare values
+
+#Creating assembly code
+
+1. Write the code
+2. Assembly the code: Compile
+nasm -f elf64 filename.asm
+3. Link the code: Execution file
+ld filename.o -o project
+
+#The assembly side of c
+1. Inline assembly (inside C code)
+2. Linking assembly and C modules
+
+#Choosing C or Assembly
+1. Such a project is possible, but a waste of time
+2. Plataform-specific 
+
+#Fiding C code botlenecks
+
+1. Use an optimization utility, like valgrind 
+2. Locate parts or your code with inefficiencies
+3. Help pinpoint where to best put assembly to use 
+
+#Using Assembly with c
+1. Link an Assembly module 
+2. Write inline assembly with asm keyword
+3. Call c functions from inside assembly
+
+#Putting assembly language into C code
+
+Object code is a common lingo
+Making functions names public or global
+Properly calling the function
+ 
+
+#Adding C to assembly
+
+- C functions can be called directly from assembly
+
+- Most C library functions require arguments
+
+- Arguments nd values are set in various register
+
+ 
+
+#Write inline assembly
+
+-Use asm keyword
+
+-Asm is followed by strings containing assembly statements
+
+-This statements are assembled and set into your program
+
+ 
+
+#Passing Arguments in assembly
+
+#Assembly arguments
+
+1. Argument rdi
+
+2. Argument rsi
+
+3. Argument rdx
+
+4. Argument  rcx
+
+5. Argument r8
+
+6. Arguement r9
+
+ 
+
+-Save any need registers
+
+-Never assume that the function preserves any register
+
+ 
+
+#Returning a value
+
+-Rax register used for integer values and addresses
+
+-xmm0 register used for floating point values
+
+-Not every C language function integrates smoothly
+
+-Values are returned in register rax or xmmo
+
+-Some overhead may be required, such as saving the rbp register
+
+ 
+
+#Passing and returning values
+
+-Values passed are set in register
+
+-rdi for the first argument
+
+-rsi for the second argument
+
+-Then: rdx, rcx, r8 and r9
+
+-Additional arguments are saved on the stack
+
+-Floating point arguments are set into xmm0, xmm1, xmm2 ...
+
+-Additional arguments are saved on the stack
+
+-rax for integers, adresses and similar values
+
+-xmm0 for floating point values
+
+ 
+
+ 
