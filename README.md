@@ -12,3 +12,29 @@
 - iostream cin>> type safe
 - Declaration can be intermixed after executable 
 - Use of new (Replace malloc). Memory allocated in heap. 
+
+### C++ is better than C
+
+- More type safe
+- More libraries
+- Less reliance on preprocessors
+- OOV vs imperative 
+
+### New features
+
+- Inline: Key word that modifies the function 
+- Const
+- static_cast<type>: safe cast
+- namespaces
+- iostream
+- Declarations anywhere including 
+- for-statement initialization 
+- What is the difference between long and long long and int ? C++ allows for longer integer types starting with a shortest type short
+### Swap function
+
+- In C call by reference simulated with pointers.
+- C++ has call by reference argument passing.
+
+### Generics 
+
+- Programming using templates 
