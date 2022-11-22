@@ -38,3 +38,12 @@
 ### Generics 
 
 - Programming using templates 
+- C++ Template:
+1. Generic programming in C++ was strongly influenced by alex stepanov
+2. Much code is the same except for type. If the code can be applied universally there can be a big saving in coding and debugging 
+3. Stepanov while at hp in the late 80's developer a set of generic libraries using a construct called a template. STL is largely based on this work
+
+- How to code
+1. Prescription: Take a normal function and add template <class t> 
+2. Now for type use T when called
+3. The compiler uses a signature matching routine to infer what the code should use for type
