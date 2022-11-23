@@ -47,3 +47,40 @@
 1. Prescription: Take a normal function and add template <class t> 
 2. Now for type use T when called
 3. The compiler uses a signature matching routine to infer what the code should use for type
+
+### Enum
+
+- Originally enum types were created to be a simple type that allowed you to name a small number of named constants as a type. In the early use of enum in C++ the type was an integral type. 
+
+### Generics and functions
+
+- New functions
+1. Default parameters, variable agument.
+2. Const parameters.
+3. Multiple types in a generic. 
+4. Operator overloading. 
+
+- Element of the array source are not be modified. Simple parameters, such as size, are typically call by value and can not be modified by the calling routine.
+- This concept is called "const correctness"
+
+### Multiple template arguments 
+
+- We have used templates with one template parameter, but it is useful to have more that one distinct type in template.
+- More genericity - but be careful. 
+
+### Cast
+
+- More types means worrying about conversions and more signatures
+- These static_cast operators are considered safe
+- The old operator (type) is deprecated as a reminder the other casting operators are:
+1. reinterpret_cast<type> : highly unsafe
+2. dynamic_cast<type> : used with classes
+3. const_cast<type> : cast away const-ness  
+
+### Graph theory and Algorithms 
+
+- A complete graph: Is a graph in which every edge exist in that graph in that map. 
+- Graph as a data structure
+1. Connectivity matrix
+2. Edge list representation
+3. Tradeoffs - graph as an ADT
