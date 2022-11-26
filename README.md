@@ -84,3 +84,21 @@
 1. Connectivity matrix
 2. Edge list representation
 3. Tradeoffs - graph as an ADT
+
+### Enum 
+
+- Enum: Is a user defined data type which can be assigned some limited values. Small set of realted const.
+- E.g: enum first_enum{value1=1, value2=10, value3=20};
+
+### Typedef
+
+- Is a keyword used for aliasing existing data type, user defined data types, and pointers to a more meaningful name. 
+- Syntax: typedef <current name> <new name>
+- E.g: typedef std::vector<int> vInt;
+
+### Operator overloading
+
+- << left bit shift
+- Predence and associativity do not change
+- based on binary signature
+- Where types are defined for the native type, they remain defined that way, so that can't be changed
