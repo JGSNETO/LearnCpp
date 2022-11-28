@@ -102,3 +102,36 @@
 - Predence and associativity do not change
 - based on binary signature
 - Where types are defined for the native type, they remain defined that way, so that can't be changed
+
+### Why add a type ?
+
+- Types are related to domains
+- So when you need to talk about widgets-you want the widget type and actions on widgets
+- C had primitive forms of type extensibility 
+
+### C type extension 
+
+- In C can "add" a type using struct
+- In C++ struct is dfferent - struct is a named scope that can include functions (methods) and have different layers of opacity(data hiding). While C++ retains struct it has the new keyword class
+- Class is almost equivalent to struct - but with different hiding defaults
+
+### C++ Point
+
+- Public: Everyone can see
+- Private: No one can see
+- Protected: The protected keyword specifies access to class members in the member-list up to the next access specifier ( public or private ) or the end of the class definition. Class members declared as protected can be used only by the following: Member functions of the class that originally declared these members.
+
+### ostream 
+
+- Form of operator overloading
+- Output stream objects can write sequences of characters and represent other kinds of data. Specific members are provided to perform these output operations 
+- ostream operator<< (ostream& out, const point & p){
+  out << "(" << p.x << ", " << p.y << ")";
+  return out;
+  }
+
+- A C++ stream is a flow of data into or out of a program, such as the data written to cout or read from cin. For this class we are currently interested in four different classes:
+1.istream is a general purpose input stream. cin is an example of an istream.
+2. ostream is a general purpose output stream. cout and cerr are both examples of ostreams.
+3. ifstream is an input file stream. It is a special kind of an istream that reads in data from a data file.
+4. ofstream is an output file stream. It is a special kind of ostream that writes data out to a data file.
