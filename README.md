@@ -135,3 +135,27 @@
 2. ostream is a general purpose output stream. cout and cerr are both examples of ostreams.
 3. ifstream is an input file stream. It is a special kind of an istream that reads in data from a data file.
 4. ofstream is an output file stream. It is a special kind of ostream that writes data out to a data file.
+
+  ### C++ and OO
+  
+  - Every class object has the implicit pointer. Keyword 'this' associate with it.
+  - Multiple contructors: It is useful to have multiple ways to initialize an object. 
+  
+  ### Constructors:
+  
+  - Initialize
+  - Convert
+  - Allocate 
+  - Can check for correctness
+  
+  ### Memory management
+  
+  - new-allocator
+  - delete-deallocator
+  - Both work with a heap. Heap is dynamically allocated memory. 
+  
+  ### Destructor
+  
+  - Deallocator when item goes out of scope.
+  - Syntax within class ~classname(){...}
+  - Typical use if for calling delete to deallocate to th heap. 
