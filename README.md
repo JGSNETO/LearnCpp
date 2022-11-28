@@ -159,3 +159,19 @@
   - Deallocator when item goes out of scope.
   - Syntax within class ~classname(){...}
   - Typical use if for calling delete to deallocate to th heap. 
+
+  ### Null pointer 
+  
+  - The zero value is the null pointer value
+  - Recall it is important in list to test for null. They are used as sentinel values.
+  - c++11 - list_element* ptr = nullptr;
+  - new keyword - type safe 
+  
+  ### Deep vs shallow copy
+  
+  - Shallow: In shallow copy, an object is created by simply copying the data of all variables of the original object.
+  - Deep: An object is created by copying data of all variables, and it also allocates similar memory resources with the same value to the object.
+  
+  - First we will examine the copy constructor. We want to build an equivalent list, that is a "deep" copy. 
+  - A "Shallow" copy would be a referential copy where the new list head would be the same as the old list head.
+  - Shallow copy is a highly efficient form of copying but has a more limited utility than a deep copy.
