@@ -175,3 +175,13 @@
   - First we will examine the copy constructor. We want to build an equivalent list, that is a "deep" copy. 
   - A "Shallow" copy would be a referential copy where the new list head would be the same as the old list head.
   - Shallow copy is a highly efficient form of copying but has a more limited utility than a deep copy.
+  
+  ### Destructor
+  
+  - Similar to free method in C
+
+  ### Dynamic structures in STL
+  
+  - The standard template library has the following data structures avaiable and you are free to use them in your problem:
+  - #include <vector>: Vector is the most used - it is nearly efficient as array and is safer and expandable 
+  - #include <list> : gets you a double linked lists
