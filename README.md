@@ -185,3 +185,17 @@
   - The standard template library has the following data structures avaiable and you are free to use them in your problem:
   - #include <vector>: Vector is the most used - it is nearly efficient as array and is safer and expandable 
   - #include <list> : gets you a double linked lists
+
+  ### Minimum Spanning Tree
+  
+  - A spanning tree is a set of edges within the graph that connects all the nodes and where there is no cycle. 
+  
+  ### Overloading & Function selection 
+  
+  - Futher c++ ideas: operator overloading and friend functions 
+  - OOP principles: User defined types should be undistinguishable from native types
+  - Operator overloading and conversion allow us to implement this principle 
+  - Implicit conversion: s=d;
+  - Explicit conversion: s=int(d);
+  - C++ 11: Explicit keyword in front of a constructor of one argument turns off its ability to be used implicity for conversion 
+  - Friend functions: having access to their private parts
