@@ -207,7 +207,19 @@
   ### Vector methods
   
   - v.size(): get current size
-  - v.resise(int size): resize the vector
+  - v.resise(int size): resize the vecto
   - Constructor: vector<T> v: empty sequence
   - vector<T> v(n): Size n with a default construstructor T() called for each element
-  - vector<T> v(n, value): value is of type t
+  - vector<T> v(n, value): value is of type T
+  
+  ### Iterators category
+  
+  - In STL there are 5 different iterators categories:
+  1. Input(weakest): Read, single pass. The input iterator must allow the elements to be searched in a forward direction one-by-one. This requires that operator++ be defined and dereferencing operator *. 
+  2. Output: Write, single pass
+  3. Foward, read and write: multipass 1D
+  4. Bidirectional: multi-pass + 2 directions
+  5. Random access (strongest) anywhere
+  
+  - In STL the design principle is to use the weakest iterator that accomodates the most efficient algorithm.
+  - Quicksort requires random access. As a consquence it cannot be used on a non-random access container such as list. 
