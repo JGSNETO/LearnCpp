@@ -199,3 +199,15 @@
   - Explicit conversion: s=int(d);
   - C++ 11: Explicit keyword in front of a constructor of one argument turns off its ability to be used implicity for conversion 
   - Friend functions: having access to their private parts
+
+  ### Standard Template Library
+  
+  - Containers(vector, list, map) + Algorithms(Sort, permute) + iterators(Forward, backward) 
+  
+  ### Vector methods
+  
+  - v.size(): get current size
+  - v.resise(int size): resize the vector
+  - Constructor: vector<T> v: empty sequence
+  - vector<T> v(n): Size n with a default construstructor T() called for each element
+  - vector<T> v(n, value): value is of type t
