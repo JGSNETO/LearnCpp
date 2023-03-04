@@ -223,3 +223,40 @@
   
   - In STL the design principle is to use the weakest iterator that accomodates the most efficient algorithm.
   - Quicksort requires random access. As a consquence it cannot be used on a non-random access container such as list. 
+
+
+# An Odyssey of C++
+
+- C++ is a compiled language. Which means that the compiler processes source code and produces object files. 
+- Linker combines the object file to an exe file.
+- Source file ->Compiler->ObjectFile->Link(Standard Library)->Exe File
+- Core language features(Standardized programming Language):
+1. Built-in types: int and unsigned char
+2. Conditional Statements: if and switch
+3. Loop: For, While
+- Standard-Library: 
+1. Collection types: std::vector and std::map
+2. I/O Operations
+
+## History
+
+### Pre-Modern C++
+- C++98: 1998
+- C++03: 2003
+- C++TR1: 2007
+### Modern C++
+- C++11: 2011
+- C++14: 2014
+- C++17: 2017
+- C++20: 2020
+- C++23: 2023
+
+### About the Language
+
+- Compiled, Standardized and statically typed. 
+- The operating system starts the C++ program by running main
+- Curly braces (chaves) express grouping in C++
+- // Starts a coment 
+- List of comands to compile and run:
+1. g++ -o progname.cpp
+2. ./progname
