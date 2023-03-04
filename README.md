@@ -260,3 +260,73 @@
 - List of comands to compile and run:
 1. g++ -o progname.cpp
 2. ./progname
+
+### Functions 
+
+- Return type
+- Name
+- List of zero or more *parameters*, specified in a comma-separated list surrounged by parantheses
+- Body - aka function body
+1. The actions that the function performs 
+2. The behavior of the function
+
+- Function declaration
+```
+int factorial(int);
+```
+- Function usage - function call
+```
+int main(){
+  int f6 = factorial(6);
+  std::cout << "Factorial of 6 is " << f6 << std::endl;
+}
+```
+```
+- Function definition:
+int factorial(int n){
+  int result = 1;
+  while(n>0){
+    result = result * n;
+    n = n - 1;
+  } 
+}
+```
+
+### Function Overloading
+
+- Several functions may be defined with the same name - aka as function overloading. 
+```
+#include <iostream>
+#include <string>
+
+void print(int);
+void print(double);
+void print(std::string);
+
+int main(){
+  print(6);
+  print(3.14);
+  print("C++ is fun!");
+}
+
+void print(int i){std::cout << "i=" << i << std::endl;}
+void print(double d){std::cout << "d=" << d << std::endl;}
+void print(std::string s){std::cout << "s= " << s << std::endl;}
+``` 
+
+### Types, Variables and Atithmetic
+
+- Built-in types: Char, Int and Double
+- User defined data types: std::string, std::vector
+- Syntax:
+
+```
+var_type var_name
+```
+
+- A declaration is an statement introducing a named entity of a specific type into the program:
+1. A type defines a set of possible values and a set of operations 
+2. An object is some memory holding a value of some type
+3. A value is a set of bits interpreted according to a type
+4. A variable is a samed object 
+
