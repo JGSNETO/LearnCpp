@@ -330,3 +330,47 @@ var_type var_name
 3. A value is a set of bits interpreted according to a type
 4. A variable is a samed object 
 
+- An object of a fundamental type has a fixed size in memory
+
+- Arithmetic operations
+1. Plus: x+y
+2. Unary Plus: +x
+3. Minus: x-y
+4. Unary Minus:-x
+5. Multiply: x*y
+6. Divide: x/y
+7. Module: x%y
+
+- Comparison Operations. All operations evaluated to bool.
+1. Equal: x==y
+2. Not Equeal: x!=y
+3. Less than: x<y
+4. Less than or equal: x<=y
+5. Greater than: x > y
+6. Greater than: x>=y
+
+- Logical Operations.
+1. Logical and: x&&y
+2. Logical or: x||y
+3. Logical not: !x
+
+- Bitwise operations.
+1. Bitwise And: x&y
+2. Bitwise Or: x|y
+3. Bitwise exclusive or: x^y
+4. Bitwise complement:
+5. Bitwise shift left:x<<n
+6. Bitwise shift right:x>>n
+
+### Initialization
+
+- Implict conversion x Implicit Initialization
+- Auto: the type of an object can be ommitted, and be derived from its initialization value´s type.
+1. Do not use when you want be explicit about an object´s precision(float/double).
+2. Making a variable´s type clearly visibly.
+
+### Scope
+
+- Any name, typically a variable defined has a scope:
+1. Local: inside a function
+2. Global: not inside a function
