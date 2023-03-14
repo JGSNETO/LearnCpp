@@ -374,3 +374,33 @@ var_type var_name
 - Any name, typically a variable defined has a scope:
 1. Local: inside a function
 2. Global: not inside a function
+
+### Constant 
+
+- const: After definition of a const var, the compiler enforces it will not be changed. 
+- constexor: Specifies constants, to accomplish placement of data in read-only memory, to prevent corruption, improve performance and save usage of RAM. 
+
+### Arrays, Pointers and Reference 
+- An array is a container of elements of a single type. Its elements are accessed by position. Offers better run-time performance due to its fixed size. An array has fixed size, elements cannot be added. 
+
+```
+type array_name[size]
+```
+
+- Pointer is declared according to:
+```
+type* pointername
+```
+- P is a variable of type "pointer to" integer. 
+- Holds the address of an object of type defined. 
+```
+Address: p = &a
+Value: *p = value
+```
+- Reference is declared according to:
+``` 
+type& r = a[2]
+```
+- r is a variable of type "reference to" integer &
+- Refers to an object of type int 
+- Must always be bound to an object. 
