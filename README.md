@@ -404,3 +404,30 @@ type& r = a[2]
 - r is a variable of type "reference to" integer &
 - Refers to an object of type int 
 - Must always be bound to an object. 
+
+### Basic I/O: Introduce iostream libray
+
+- The stdio-library from C are only able to handle the fundamental types.
+- C++ iostream library facilitates streaming of user-defined types.
+- The safe C++ way:
+``` 
+std::cin>>
+std::cout<<
+```
+- The std namespace also contains the error logging instances:
+1. cerr: Unuffered
+2. clog: buffered
+- Both objects also of type std::ostream connected to standard error
+- Output stream operator: << or the insertion operator 
+- When we use: using namespace std; The cons of using this way is that we make everything in the namespace avaiable without qualification.
+- Can be hard to determine the origin of an identifier. 
+- Input stream operator: >>
+
+### Unittest 
+- Unittest is a method by which:
+1. Individual units of source code
+2. Sets of one or more computer program modules together with associated control data
+3. Usage procedures
+4. Operating procedures
+
+- The unittest is regarded the smallest testable part of an application 
