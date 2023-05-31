@@ -431,3 +431,11 @@ std::cout<<
 4. Operating procedures
 
 - The unittest is regarded the smallest testable part of an application 
+### Enumerations
+
+- A type that holding a set of integer values specified by the user.
+```
+enum class Color {Red, Green, Blue};
+```
+- Specifies an enumeration named color with the enumarators, Red, Green and Blue.
+- With the integer values 0, 1 and 2 respectively 
