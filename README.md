@@ -438,4 +438,45 @@ std::cout<<
 enum class Color {Red, Green, Blue};
 ```
 - Specifies an enumeration named color with the enumarators, Red, Green and Blue.
-- With the integer values 0, 1 and 2 respectively 
+- With the integer values 0, 1 and 2 respectively
+  
+### Classes 
+
+- A user-defined type demands a tighter connection between its data and operations
+1. The data representation shall be inaccessible to users in order to guarantee its consistent usage 
+2. We distinguish between:
+- The interface to a type: To be used by others 
+- The implementation: Which has access to the otherwise inaccessible data
+- We call this class
+
+- A class can define a set of members of different kinds like:
+1. Data: aka members variables 
+2. Function: aka method or operation
+3. Type: nested type
+
+### This
+
+- In C++ the 'this' pointer is special pointer that is automatically avaiable within non-static member functions of a class. It points to the object instance on which the member functio is being called. 
+
+Here are a few key points to understand about the 'this' pointer:
+1. 'this is keyword in C++ reserved that represents a constant pointer to the current object. It is implicity avaiable within non-static member functions. 
+2. Pointer to the current object: The 'this' pointer holds the memory address of the current object instance. It allows you to access the member variables and member functions of the current object within the member functions of the class.
+3. Implicit usage: You dont need to explicity pass or use 'this' as a parameter in member functions. It is automatically available, and you can access the member variables and member functions using the '.'(dot) operator with 'this' pointer. 
+4. Disambiguating members variables: The 'this' pointer is particylarly useful when you have a local variable or a function parameter with the same name as a member variable. In such cases, using 'this' allows you to refer to the member variable specifically disambiguating it from the local variable or parameter.
+5. Const member functions: In const member functions(functions declared with the 'const' qualifier) the 'this' pointer is treated as a pointer to a constant object. This emans that you can only call const member functions and access const-qualified member variables though the 'this' pointer within a const member function
+
+```
+class MyClass {
+private:
+    int myVariable;
+
+public:
+    void setVariable(int value) {
+        this->myVariable = value; // Accessing member variable using this pointer
+    }
+
+    void printVariable() const {
+        std::cout << "My variable value: " << this->myVariable << std::endl; // Accessing member variable in a const member function
+    }
+};
+```
