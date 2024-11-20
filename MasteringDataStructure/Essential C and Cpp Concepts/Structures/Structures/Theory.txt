@@ -1,0 +1,7 @@
+STRUCTURES
+
+- Structure can be defined as a collection of data members, that are related data members under one name, and those data members
+may be of similar type, maybe of not similar type. 
+- Structure is used for defining user define data types. 
+- The size of a structure is the total amount of memory consumed by all its members. 
+Time = 10:03
