@@ -1,0 +1,3 @@
+﻿  main.cpp
+D:\Repo\LearnCpp\MasteringDataStructure\Essential C and Cpp Concepts\Structures\Structures\main.cpp(34,9): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'size_t'
+  Structures.vcxproj -> D:\Repo\LearnCpp\MasteringDataStructure\Essential C and Cpp Concepts\Structures\x64\Debug\Structures.exe

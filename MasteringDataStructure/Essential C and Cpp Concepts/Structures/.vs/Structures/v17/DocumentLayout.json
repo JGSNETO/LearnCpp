@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Repo\\LearnCpp\\MasteringDataStructure\\Essential C and Cpp Concepts\\Structures\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{20D01661-4D4F-48E5-8FF6-3A72B14A49FC}|Structures\\Structures.vcxproj|D:\\Repo\\LearnCpp\\MasteringDataStructure\\Essential C and Cpp Concepts\\Structures\\Structures\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{20D01661-4D4F-48E5-8FF6-3A72B14A49FC}|Structures\\Structures.vcxproj|solutionrelative:Structures\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{20D01661-4D4F-48E5-8FF6-3A72B14A49FC}|Structures\\Structures.vcxproj|D:\\Repo\\LearnCpp\\MasteringDataStructure\\Essential C and Cpp Concepts\\Structures\\Structures\\Theory.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{20D01661-4D4F-48E5-8FF6-3A72B14A49FC}|Structures\\Structures.vcxproj|solutionrelative:Structures\\Theory.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
@@ -19,12 +23,25 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\Repo\\LearnCpp\\MasteringDataStructure\\Essential C and Cpp Concepts\\Structures\\Structures\\main.cpp",
+              "RelativeDocumentMoniker": "Structures\\main.cpp",
+              "ToolTip": "D:\\Repo\\LearnCpp\\MasteringDataStructure\\Essential C and Cpp Concepts\\Structures\\Structures\\main.cpp",
+              "RelativeToolTip": "Structures\\main.cpp",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-22T21:10:24.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Theory.txt",
               "DocumentMoniker": "D:\\Repo\\LearnCpp\\MasteringDataStructure\\Essential C and Cpp Concepts\\Structures\\Structures\\Theory.txt",
               "RelativeDocumentMoniker": "Structures\\Theory.txt",
               "ToolTip": "D:\\Repo\\LearnCpp\\MasteringDataStructure\\Essential C and Cpp Concepts\\Structures\\Structures\\Theory.txt",
               "RelativeToolTip": "Structures\\Theory.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAMAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
               "WhenOpened": "2024-11-20T21:22:32.099Z",
               "EditorCaption": ""
