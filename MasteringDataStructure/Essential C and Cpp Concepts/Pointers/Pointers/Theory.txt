@@ -1,0 +1,17 @@
+Pointes:
+
+1. Why pointers
+- Pointer is an address variables that is meant for storing address of data, not the data itself.
+- Used for indirect access of data. 
+- Pointers are used to access resources outside the program.
+
+2. Main memory areas
+
+2.1: Heap memory
+2.2: Stack
+2.3: Code 
+
+3. Use of pointers:
+- The program can directly access code section and stack memory. Heap is external to the program. To access pointers(On stack) are needed. 
+- Pointers are used to access: Heap memory, resource and parameters passing. 
+- malloc(): Get space on heap memory. e.g: p = (int *)malloc(5*sizeof(int));
