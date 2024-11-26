@@ -1,4 +1,2 @@
 ﻿  main.cpp
-D:\Repo\LearnCpp\MasteringDataStructure\Essential C and Cpp Concepts\Pointers\Pointers\main.cpp(13,9): warning C4477: 'printf' : format string '%d' requires an argument of type 'int', but variadic argument 1 has type 'int *'
-D:\Repo\LearnCpp\MasteringDataStructure\Essential C and Cpp Concepts\Pointers\Pointers\main.cpp(13,9): warning C4313: 'printf': '%d' in format string conflicts with argument 1 of type 'int *'
   Pointers.vcxproj -> D:\Repo\LearnCpp\MasteringDataStructure\Essential C and Cpp Concepts\Pointers\x64\Debug\Pointers.exe
