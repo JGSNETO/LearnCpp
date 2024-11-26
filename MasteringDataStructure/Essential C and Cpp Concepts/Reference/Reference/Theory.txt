@@ -1,0 +1,9 @@
+Reference in C++
+
+- Reference is a nickname given to a variavle or alias given to a variable.
+
+int a = 10; // Common var
+int *p; // Pointer
+int &r = a; // Reference. Must be initialized.
+
+- Motivation; This is useful in parameter passing. For writing small functions. We use reference instead of pointers. 
