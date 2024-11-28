@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Repo\\LearnCpp\\MasteringDataStructure\\Essential C and Cpp Concepts\\Reference\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{81E56BC9-4E28-49D3-88DB-D7F504657369}|Reference\\Reference.vcxproj|D:\\Repo\\LearnCpp\\MasteringDataStructure\\Essential C and Cpp Concepts\\Reference\\Reference\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{81E56BC9-4E28-49D3-88DB-D7F504657369}|Reference\\Reference.vcxproj|solutionrelative:Reference\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{81E56BC9-4E28-49D3-88DB-D7F504657369}|Reference\\Reference.vcxproj|D:\\Repo\\LearnCpp\\MasteringDataStructure\\Essential C and Cpp Concepts\\Reference\\Reference\\Theory.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{81E56BC9-4E28-49D3-88DB-D7F504657369}|Reference\\Reference.vcxproj|solutionrelative:Reference\\Theory.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
     }
@@ -19,6 +23,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "D:\\Repo\\LearnCpp\\MasteringDataStructure\\Essential C and Cpp Concepts\\Reference\\Reference\\Source.cpp",
+              "RelativeDocumentMoniker": "Reference\\Source.cpp",
+              "ToolTip": "D:\\Repo\\LearnCpp\\MasteringDataStructure\\Essential C and Cpp Concepts\\Reference\\Reference\\Source.cpp",
+              "RelativeToolTip": "Reference\\Source.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-28T20:14:57.631Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Theory.txt",
               "DocumentMoniker": "D:\\Repo\\LearnCpp\\MasteringDataStructure\\Essential C and Cpp Concepts\\Reference\\Reference\\Theory.txt",
               "RelativeDocumentMoniker": "Reference\\Theory.txt",
