@@ -1,0 +1,34 @@
+Pointer to structure
+
+- "." Operator: Normal variables;
+- (*p).variable: The *p dereferences the pointer p, giving you the actual object it points to. After dereferencing, you use the . operator to access the variable of the object.
+struct Example {
+    int value;
+};
+Example obj = {10};
+Example* p = &obj;
+
+int x = (*p).value; // Dereference pointer `p` to get the object, then access `value`.
+
+- p->length: The -> operator is a shorthand for accessing members through a pointer. Internally, p->variable is equivalent to (*p).variable.
+
+struct Example {
+    int value;
+};
+Example obj = {10};
+Example* p = &obj;
+
+int x = p->value; // Access `value` directly using the pointer with the `->` operator.
+
+Feature	       |            (*p).variable	            |       p->variable
+-------------------------------------------------------------------------------------
+Syntax	       |            Explicit dereference (*p) + .	|   Concise and direct (->)
+Readability	   |            Less readable	                |   More readable
+Functionality  |            Explicitly shows dereferencing	|   Equivalent but shorthand
+Common Use	   |            Rarely used in practice	        |   referred in modern C++
+
+- Why dereference ?
+
+Dereferencing is essential when working with pointers in C++ because pointers store addresses of objects in memory, not the actual objects themselves. 
+Dereferencing a pointer retrieves the value or object located at the memory address the pointer is pointing to. 
+Without dereferencing, you cannot directly access or manipulate the data that the pointer points to.

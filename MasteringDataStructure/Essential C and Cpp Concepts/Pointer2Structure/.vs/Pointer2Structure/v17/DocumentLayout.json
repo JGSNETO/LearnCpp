@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Repo\\LearnCpp\\MasteringDataStructure\\Essential C and Cpp Concepts\\Pointer2Structure\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6BFE757F-71E1-47D2-BD56-76D5171749EA}|Pointer2Structure\\Pointer2Structure.vcxproj|D:\\Repo\\LearnCpp\\MasteringDataStructure\\Essential C and Cpp Concepts\\Pointer2Structure\\Pointer2Structure\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6BFE757F-71E1-47D2-BD56-76D5171749EA}|Pointer2Structure\\Pointer2Structure.vcxproj|solutionrelative:Pointer2Structure\\Source.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6BFE757F-71E1-47D2-BD56-76D5171749EA}|Pointer2Structure\\Pointer2Structure.vcxproj|D:\\Repo\\LearnCpp\\MasteringDataStructure\\Essential C and Cpp Concepts\\Pointer2Structure\\Pointer2Structure\\Theory.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{6BFE757F-71E1-47D2-BD56-76D5171749EA}|Pointer2Structure\\Pointer2Structure.vcxproj|solutionrelative:Pointer2Structure\\Theory.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Source.cpp",
+              "DocumentMoniker": "D:\\Repo\\LearnCpp\\MasteringDataStructure\\Essential C and Cpp Concepts\\Pointer2Structure\\Pointer2Structure\\Source.cpp",
+              "RelativeDocumentMoniker": "Pointer2Structure\\Source.cpp",
+              "ToolTip": "D:\\Repo\\LearnCpp\\MasteringDataStructure\\Essential C and Cpp Concepts\\Pointer2Structure\\Pointer2Structure\\Source.cpp",
+              "RelativeToolTip": "Pointer2Structure\\Source.cpp",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAIwCAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-11-28T20:47:27.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Theory.txt",
+              "DocumentMoniker": "D:\\Repo\\LearnCpp\\MasteringDataStructure\\Essential C and Cpp Concepts\\Pointer2Structure\\Pointer2Structure\\Theory.txt",
+              "RelativeDocumentMoniker": "Pointer2Structure\\Theory.txt",
+              "ToolTip": "D:\\Repo\\LearnCpp\\MasteringDataStructure\\Essential C and Cpp Concepts\\Pointer2Structure\\Pointer2Structure\\Theory.txt",
+              "RelativeToolTip": "Pointer2Structure\\Theory.txt",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAACEAAABfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-11-28T20:25:28.124Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
