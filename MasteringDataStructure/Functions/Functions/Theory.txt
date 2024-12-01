@@ -1,0 +1,9 @@
+Functions
+
+- Functions is a piece of code which performs a specific task. 
+- Structure is a group of related data members. While functions is a group of related instructions which perform a specific data. 
+- Group of data: Structure
+- Group of instructions: Functions
+
+- Using functions we can separate the small taks that repeats. 
+- Using functions in a code: Modular program or procedural program style. 
